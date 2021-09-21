@@ -153,10 +153,6 @@ body {
 
 .projects .grid .detail {
   position: absolute;
-  top: 80px;
-  left: 120px;
-  bottom: 80px;
-  right: 120px;
   border-radius: 50%;
   color: white;
   background-color: #552CC9;
@@ -167,6 +163,15 @@ body {
   -webkit-transform: scale(0);
           transform: scale(0);
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 130px;
+  width: 130px;
 }
 
 .projects .grid .detail h5 {
