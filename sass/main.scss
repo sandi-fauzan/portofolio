@@ -154,6 +154,10 @@ body {
 
         .detail {
             position: absolute;
+            top: 80px;
+            left: 120px;
+            bottom: 80px;
+            right: 120px;
             border-radius: 50%;
             color: white;
             background-color: $text-color;
@@ -162,9 +166,6 @@ body {
             cursor: pointer;
             display: flex;
             justify-content: center;
-            text-align: center;
-            height: 130px;
-            width: 130px;
 
             h5 {
                 text-align: center;
@@ -445,6 +446,7 @@ section {
                 transition: transform .8s;
                 transform: scale(0);
                 cursor: pointer;
+                vertical-align: middle;
 
                 h5 {
                     text-align: center;
