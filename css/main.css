@@ -1,0 +1,646 @@
+@font-face {
+  font-family: 'monument-bold';
+  src: url("/fonts/monument-bold.otf");
+}
+
+@font-face {
+  font-family: 'monument-regular';
+  src: url("/fonts/monument-regular.otf");
+}
+
+body {
+  background-color: #f9f6ff;
+  scroll-behavior: smooth;
+}
+
+.nav .nav-title {
+  font-family: "Poppins", sans-serif;
+  margin: 40px 60px;
+  font-size: 29px;
+  color: #552CC9;
+  font-weight: 500;
+}
+
+.nav .nav-links {
+  margin: 40px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+  color: #552CC9;
+  margin-left: auto;
+}
+
+.nav .nav-links a {
+  padding: 10px 20px;
+  margin-right: 31px;
+}
+
+.nav .nav-links a:hover {
+  background-color: #e9e4f1;
+}
+
+.nav #nav-check {
+  display: none;
+}
+
+.main {
+  margin: 224px auto;
+}
+
+.main h1 {
+  font-family: "monument-bold";
+  font-size: 103px;
+  color: #552CC9;
+  margin: 0 40px;
+  line-height: 90px;
+  letter-spacing: 4%;
+  display: block;
+}
+
+.main h1 span {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.main h1 span:hover {
+  content: '';
+  color: #f78094;
+  -webkit-transition: .5s;
+  transition: .5s;
+  cursor: pointer;
+  -webkit-transform: rotate(26deg);
+          transform: rotate(26deg);
+}
+
+.about {
+  margin: 304px auto;
+  opacity: 0;
+  -webkit-transition: .8s;
+  transition: .8s;
+  -webkit-transform: translate(0, -60px);
+          transform: translate(0, -60px);
+}
+
+.about h1 {
+  font-family: "monument-bold";
+  font-size: 80px;
+  color: #552CC9;
+  margin: 0 400px;
+  line-height: 90px;
+  letter-spacing: 4%;
+  text-align: left;
+}
+
+.about p {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #552CC9;
+  margin: 20px 40px;
+  margin-left: auto;
+  text-align: left;
+  padding-left: 400px;
+  line-height: 30px;
+  text-transform: lowercase;
+}
+
+.projects {
+  margin: 304px auto;
+  opacity: 0;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-transform: translate(0, -40px);
+          transform: translate(0, -40px);
+}
+
+.projects h1 {
+  font-family: "monument-bold";
+  font-size: 80px;
+  color: #552CC9;
+  margin: 0 40px;
+}
+
+.projects p {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  color: #552CC9;
+  margin: 20px 40px;
+  line-height: 30px;
+  padding-right: 130px;
+}
+
+.projects .grid {
+  padding: 40px;
+}
+
+.projects .grid div {
+  overflow: hidden;
+  position: relative;
+  background-size: cover;
+}
+
+.projects .grid div img {
+  -webkit-transition: -webkit-transform .5s;
+  transition: -webkit-transform .5s;
+  transition: transform .5s;
+  transition: transform .5s, -webkit-transform .5s;
+  width: 100%;
+  min-height: 362px;
+}
+
+.projects .grid div:hover img {
+  -webkit-transform: scale(1.4);
+          transform: scale(1.4);
+}
+
+.projects .grid .detail {
+  position: absolute;
+  top: 80px;
+  left: 120px;
+  bottom: 80px;
+  right: 120px;
+  border-radius: 50%;
+  color: white;
+  background-color: #552CC9;
+  -webkit-transition: -webkit-transform .8s;
+  transition: -webkit-transform .8s;
+  transition: transform .8s;
+  transition: transform .8s, -webkit-transform .8s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  cursor: pointer;
+}
+
+.projects .grid .detail h5 {
+  text-align: center;
+  margin-top: 85px;
+}
+
+.projects .grid div:hover .detail {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  z-index: 1;
+}
+
+.skill {
+  margin: 304px 40px;
+  opacity: 0;
+  -webkit-transition: .6s;
+  transition: .6s;
+  -webkit-transform: translate(0, -40px);
+          transform: translate(0, -40px);
+}
+
+.skill h1 {
+  font-family: "monument-bold";
+  font-size: 80px;
+  color: #552CC9;
+}
+
+.skill h3 {
+  font-family: "monument-regular";
+  font-size: 40px;
+  color: #552CC9;
+  margin-top: 40px;
+}
+
+.skill ul li {
+  margin-left: 80px;
+  list-style: square;
+  font-size: 27px;
+  margin-top: 20px;
+  color: #552CC9;
+}
+
+.skill ul li span {
+  font-size: 17px;
+}
+
+section {
+  position: relative;
+}
+
+section .custom-shape-divider-bottom-1629550181 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+section .custom-shape-divider-bottom-1629550181 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+section .custom-shape-divider-bottom-1629550181 .shape-fill {
+  fill: #552CC9;
+}
+
+.contact {
+  background-color: #552CC9;
+  width: 100%;
+  padding: 200px;
+}
+
+.contact h2 {
+  font-size: 80px;
+  font-family: "monument-bold";
+  margin-bottom: 80px;
+}
+
+.contact h4 {
+  padding-top: 40px;
+  font-size: 40px;
+  font-family: "monument-regular";
+}
+
+.contact a {
+  color: white;
+  font-size: 21px;
+  margin-top: 20px;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 0;
+    max-width: 100%;
+    overflow-x: hidden;
+    position: relative;
+  }
+  /* Nav */
+  .nav {
+    margin-top: 14px;
+  }
+  .nav > .nav-header > .nav-title {
+    margin: 20px;
+    font-size: 23px;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 16px;
+    color: #552CC9;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #552CC9;
+  }
+  .nav > .nav-links {
+    z-index: 1;
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #552CC9;
+    color: #fff;
+    height: 0px;
+    -webkit-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    font-size: 22px;
+    width: 100%;
+    margin: 40px auto;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+  .main {
+    margin: 124px auto;
+  }
+  .main h1 {
+    font-family: "monument-bold";
+    font-size: 30px;
+    color: #552CC9;
+    margin: 0 20px;
+    line-height: 30px;
+    letter-spacing: 2%;
+    display: block;
+  }
+  .main h1 span:hover {
+    content: '';
+    color: #f78094;
+    -webkit-transition: .5s;
+    transition: .5s;
+    cursor: pointer;
+    -webkit-transform: rotateZ(6deg);
+            transform: rotateZ(6deg);
+  }
+  .about {
+    margin: 204px auto;
+  }
+  .about h1 {
+    font-family: "monument-bold";
+    font-size: 32px;
+    color: #552CC9;
+    margin: 0 20px;
+    line-height: 30px;
+    letter-spacing: 2%;
+    text-align: left;
+  }
+  .about p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #552CC9;
+    padding: 20px;
+    line-height: 30px;
+    text-transform: lowercase;
+  }
+  .projects {
+    margin: 204px auto;
+  }
+  .projects h1 {
+    font-family: "monument-bold";
+    font-size: 32px;
+    color: #552CC9;
+    margin: 0 20px;
+  }
+  .projects p {
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    color: #552CC9;
+    line-height: 30px;
+    padding: 20px;
+    margin: 0;
+  }
+  .projects .grid {
+    padding: 20px;
+    display: block;
+  }
+  .projects .grid div {
+    overflow: hidden;
+    position: relative;
+    background-size: cover;
+    margin-top: 20px;
+  }
+  .projects .grid div img {
+    -webkit-transition: -webkit-transform .5s;
+    transition: -webkit-transform .5s;
+    transition: transform .5s;
+    transition: transform .5s, -webkit-transform .5s;
+    width: 100%;
+    min-height: 202px;
+  }
+  .projects .grid div:hover img {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  .projects .grid .detail {
+    position: absolute;
+    top: 40px;
+    left: 80px;
+    bottom: 40px;
+    right: 80px;
+    border-radius: 50%;
+    color: white;
+    background-color: #552CC9;
+    -webkit-transition: -webkit-transform .8s;
+    transition: -webkit-transform .8s;
+    transition: transform .8s;
+    transition: transform .8s, -webkit-transform .8s;
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    cursor: pointer;
+  }
+  .projects .grid .detail h5 {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .projects .grid div:hover .detail {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    z-index: 1;
+  }
+  .skill {
+    margin: 204px 20px;
+  }
+  .skill h1 {
+    font-family: "monument-bold";
+    font-size: 30px;
+    color: #552CC9;
+  }
+  .skill h3 {
+    font-family: "monument-regular";
+    font-size: 20px;
+    color: #552CC9;
+    margin-top: 40px;
+  }
+  .skill ul li {
+    margin-left: 20px;
+    list-style: square;
+    font-size: 19px;
+    margin-top: 20px;
+    color: #552CC9;
+  }
+  .skill ul li span {
+    font-size: 13px;
+  }
+  section {
+    position: relative;
+  }
+  section .custom-shape-divider-bottom-1629550181 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  section .custom-shape-divider-bottom-1629550181 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 40px;
+  }
+  section .custom-shape-divider-bottom-1629550181 .shape-fill {
+    fill: #552CC9;
+  }
+  .contact {
+    background-color: #552CC9;
+    width: 100%;
+    padding: 60px 40px;
+  }
+  .contact h2 {
+    font-size: 30px;
+    font-family: "monument-bold";
+    margin-bottom: 40px;
+    margin-top: 40px;
+  }
+  .contact a {
+    color: white;
+    font-size: 17px;
+    margin-top: 20px;
+    display: block;
+  }
+  .contact h4 {
+    font-size: 24px;
+  }
+}
+
+.muncul {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+
+.loader-wrapper {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #552CC9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loader-wrapper h1 {
+  font-family: "monument-bold";
+  color: #fff;
+  font-size: 40px;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 70px;
+}
+
+.lds-ellipsis div {
+  position: absolute;
+  top: 18px;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #fff;
+  -webkit-animation-timing-function: cubic-bezier(0, 1, 1, 0);
+          animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis1 0.6s infinite;
+          animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+  left: 8px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+  left: 32px;
+  -webkit-animation: lds-ellipsis2 0.6s infinite;
+          animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+  left: 56px;
+  -webkit-animation: lds-ellipsis3 0.6s infinite;
+          animation: lds-ellipsis3 0.6s infinite;
+}
+
+@-webkit-keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes lds-ellipsis1 {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@keyframes lds-ellipsis3 {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+}
+
+@-webkit-keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+
+@keyframes lds-ellipsis2 {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(24px, 0);
+            transform: translate(24px, 0);
+  }
+}
+/*# sourceMappingURL=main.css.map */
