@@ -331,13 +331,14 @@ section .custom-shape-divider-bottom-1629550181 .shape-fill {
     overflow-y: auto;
   }
   .main {
-    margin: 124px auto;
+    margin: 174px auto;
   }
   .main h1 {
     font-family: "monument-bold";
-    font-size: 30px;
+    font-size: 37px;
     color: #552CC9;
-    margin: 0 20px;
+    margin: 0;
+    margin-left: 20px;
     line-height: 30px;
     letter-spacing: 2%;
     display: block;
@@ -352,11 +353,11 @@ section .custom-shape-divider-bottom-1629550181 .shape-fill {
             transform: rotateZ(6deg);
   }
   .about {
-    margin: 204px auto;
+    margin: 274px auto;
   }
   .about h1 {
     font-family: "monument-bold";
-    font-size: 32px;
+    font-size: 28px;
     color: #552CC9;
     margin: 0 20px;
     line-height: 30px;
@@ -365,7 +366,7 @@ section .custom-shape-divider-bottom-1629550181 .shape-fill {
   }
   .about p {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     color: #552CC9;
     padding: 20px;
     line-height: 30px;
@@ -376,13 +377,13 @@ section .custom-shape-divider-bottom-1629550181 .shape-fill {
   }
   .projects h1 {
     font-family: "monument-bold";
-    font-size: 32px;
+    font-size: 28px;
     color: #552CC9;
     margin: 0 20px;
   }
   .projects p {
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: 17px;
     color: #552CC9;
     line-height: 30px;
     padding: 20px;
@@ -441,7 +442,7 @@ section .custom-shape-divider-bottom-1629550181 .shape-fill {
   }
   .skill h1 {
     font-family: "monument-bold";
-    font-size: 30px;
+    font-size: 28px;
     color: #552CC9;
   }
   .skill h3 {
@@ -453,7 +454,7 @@ section .custom-shape-divider-bottom-1629550181 .shape-fill {
   .skill ul li {
     margin-left: 20px;
     list-style: square;
-    font-size: 19px;
+    font-size: 17px;
     margin-top: 20px;
     color: #552CC9;
   }
